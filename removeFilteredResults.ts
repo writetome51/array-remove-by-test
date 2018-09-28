@@ -1,4 +1,5 @@
-import { getAndRemoveFilteredResults } from '../get/getAndRemoveFilteredResults';
+import { getAndRemoveFilteredResults }
+	from '@writetome51/array-get-and-removers-filtered-results-duplicates/getAndRemoveFilteredResults';
 
 
 export function removeFilteredResults(testFunction, array): void {
