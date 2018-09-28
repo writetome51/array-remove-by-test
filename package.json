@@ -1,0 +1,36 @@
+{
+  "name": "@writetome51/array-modifiers-that-return-void",
+  "version": "1.0.0",
+  "description": "array-handling functions that return indexes of items in the array",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/writetome51/array-get-indexes.git"
+  },
+  "keywords": [
+    "array",
+    "manipulation",
+    "indexes",
+    "data"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/writetome51/array-get-indexes/issues"
+  },
+  "homepage": "https://github.com/writetome51/array-get-indexes#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "basic-data-handling": "latest",
+    "@writetome51/array-and-index-validation": "latest",
+    "@writetome51/array-get-indexes":"latest",
+    "@writetome51/array-non-modifying-getters-basic": "latest",
+    "@writetome51/arrays-match": "latest",
+    "@writetome51/array-get-and-removers-basic": "latest",
+    "@writetome51/adjacent-to-value-info-interface": "latest",
+    "@writetome51/array-get-and-remove-all-before-or-after-public": "latest"
+  }
+}
