@@ -1,1 +1,1 @@
-These are array-handling functions that return indexes of items in the array.
+This function removes items from the array that match the criteria of the test function.
