@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-remove-filtered-results",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This function removes items from the array that match the criteria of the test function",
   "main": "",
   "scripts": {
