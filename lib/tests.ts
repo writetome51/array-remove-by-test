@@ -50,7 +50,7 @@ if (errorTriggered) console.log('test 5 passed');
 else console.log('test 5 FAILED');
 
 
-// Test 5: if callback function does not return boolean, array should not be changed:
+// Test 5: if callback function does not return anything, array should not be changed:
 arr = [1,2,3,4,5];
 removeFilteredResults((item) => {
 	let x = item;

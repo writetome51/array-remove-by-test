@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-remove-filtered-results",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This function removes items from the array that match the criteria of the test function",
   "main": "index.js",
   "scripts": {
@@ -13,9 +13,9 @@
   "author": "Steve Thompson",
   "license": "MIT",
   "devDependencies": {
-    "@writetome51/arrays-match": "latest"
+    "@writetome51/arrays-match": "~1.0.2"
   },
   "dependencies": {
-    "@writetome51/array-get-and-remove-filtered-results": "latest"
+    "@writetome51/array-get-and-remove-filtered-results": "~2.0.4"
   }
 }
