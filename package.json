@@ -1,21 +1,26 @@
 {
-  "name": "@writetome51/array-remove-filtered-results",
-  "version": "1.0.3",
-  "description": "This function removes items from the array that match the criteria of the test function",
-  "main": "index.js",
+  "name": "@writetome51/array-remove-by-test",
+  "version": "1.0.0",
+  "description": "function removes array items that match the criteria of a test function",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "keywords": [
     "array",
-    "manipulation"
+    "manipulation",
+    "remove",
+    "filter",
+    "items"
   ],
   "author": "Steve Thompson",
   "license": "MIT",
+  "homepage": "https://github.com/writetome51/array-remove-by-test#readme",
   "devDependencies": {
-    "@writetome51/arrays-match": "~1.0.2"
+    "@writetome51/arrays-match": "~1.0.5"
   },
   "dependencies": {
-    "@writetome51/array-get-and-remove-filtered-results": "~2.0.4"
+    "@writetome51/array-get-and-remove-by-test": "~1.0.0"
   }
 }

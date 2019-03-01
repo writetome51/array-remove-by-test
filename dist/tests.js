@@ -1,24 +1,24 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var removeFilteredResults_1 = require("./removeFilteredResults");
+var index_1 = require("./index");
 var arrays_match_1 = require("@writetome51/arrays-match");
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // Test 1
-removeFilteredResults_1.removeFilteredResults(function (item) { return item > 4; }, arr);
+index_1.removeByTest(function (item) { return item > 4; }, arr);
 if (arrays_match_1.arraysMatch(arr, [1, 2, 3, 4]))
     console.log('test 1 passed');
 else
     console.log('test 1 FAILED');
 // Test 2
 arr = ['', 'a', 'bb', 'ccc', 'hello everyone', 'lalalalalala', 'the the the the'];
-removeFilteredResults_1.removeFilteredResults(function (item) { return item.length > 3; }, arr);
+index_1.removeByTest(function (item) { return item.length > 3; }, arr);
 if (arrays_match_1.arraysMatch(arr, ['', 'a', 'bb', 'ccc']))
     console.log('test 2 passed');
 else
     console.log('test 2 FAILED');
 // Test 3
 arr = ['', 'a', 'bb', 'ccc', 'hello everyone', 'lalalalalala', 'the the the the', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-removeFilteredResults_1.removeFilteredResults(function (item) {
+index_1.removeByTest(function (item) {
     return ((typeof item === 'string' && item.length > 3) || (typeof item === 'number' && item > 4));
 }, arr);
 if (arrays_match_1.arraysMatch(arr, ['', 'a', 'bb', 'ccc', 1, 2, 3, 4]))
@@ -28,7 +28,7 @@ else
 // Test 4: if anything but a function is passed as first arg, error is triggered:
 var errorTriggered = false;
 try {
-    removeFilteredResults_1.removeFilteredResults({}, arr);
+    index_1.removeByTest({}, arr);
 }
 catch (e) {
     errorTriggered = true;
@@ -40,7 +40,7 @@ else
 // Test 5: if anything but an array is passed as second arg, error is triggered:
 errorTriggered = false;
 try {
-    removeFilteredResults_1.removeFilteredResults(function (item) { return item === 1; }, {});
+    index_1.removeByTest(function (item) { return item === 1; }, {});
 }
 catch (e) {
     errorTriggered = true;
@@ -51,7 +51,7 @@ else
     console.log('test 5 FAILED');
 // Test 5: if callback function does not return anything, array should not be changed:
 arr = [1, 2, 3, 4, 5];
-removeFilteredResults_1.removeFilteredResults(function (item) {
+index_1.removeByTest(function (item) {
     var x = item;
 }, arr);
 if (arrays_match_1.arraysMatch(arr, [1, 2, 3, 4, 5]))
