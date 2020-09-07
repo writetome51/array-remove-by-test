@@ -1,4 +1,4 @@
 export declare function removeByTest(
-	testFunction: (currentValue: any, currentIndex?: number, theArray?: any[]) => boolean,
+	test: (value: any, index?: number, array?: any[]) => boolean,
 	array: any[]
 ): void;

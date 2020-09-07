@@ -1,10 +1,9 @@
-# removeByTest(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testFunction,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>):  void
+# removeByTest(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;test: (value, index?, array?) => boolean,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>):  void
 
-Removes any item in `array` that passes a `testFunction`.  
-`testFunction = function(value,  index?,  theArray?): boolean`
+Removes any item in `array` that passes a `test`.  
 
 ## Example
-```
+```js
 let arr = [1,2,3,4,5,6,7,8,9,10];
 
 removeByTest((item) => (item * 2) === 10,  arr);
@@ -21,13 +20,10 @@ removeByTest(
 
 ## Installation
 ```bash
-npm install @writetome51/array-remove-by-test
+npm i @writetome51/array-remove-by-test
 ```
 
 ## Loading
-```
-// If using TypeScript:
+```js
 import {removeByTest} from '@writetome51/array-remove-by-test';
-// If using ES5 JavaScript:
-var removeByTest = require('@writetome51/array-emove-by-test').removeByTest;
 ```
