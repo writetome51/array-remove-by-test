@@ -52,4 +52,3 @@ removeByTest((item) => {
 }, arr);
 if (arraysMatch(arr, [1, 2, 3, 4, 5])) console.log('test 6 passed');
 else console.log('test 6 FAILED');
-

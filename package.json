@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-remove-by-test",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Removes array items that match the criteria of a test function",
   "type": "module",
   "main": "dist/index.js",
@@ -22,6 +22,6 @@
     "@writetome51/arrays-match": ">=2.0.2"
   },
   "dependencies": {
-    "@writetome51/array-get-and-remove-by-test": ">=3.0.0"
+    "@writetome51/array-get-and-remove-by-index": ">=2.0.0"
   }
 }
